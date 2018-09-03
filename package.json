@@ -1,5 +1,6 @@
 {
   "name": "alek.in",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "start": "parcel ./src/index.html ",
@@ -32,5 +33,13 @@
         "flexbox": "no-2009"
       }
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amerani/alek.in.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amerani/alek.in/issues"
+  },
+  "homepage": "https://github.com/amerani/alek.in#readme"
 }
