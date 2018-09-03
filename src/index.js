@@ -4,10 +4,12 @@ import './index.scss';
 import pkg from "./package.alias.json";
 
 const App = () => (
-  <div className="App">
-    <p>Under Construction! Please check back later...</p>
-    <p>version {pkg.version}</p>
-  </div>
+  <React.Fragment>
+    <div className="App">
+      <p>Under Construction! Please check back later...</p>
+    </div>
+    <footer id="footer">v{pkg.version}</footer>
+  </React.Fragment>
 );
 
 ReactDOM.render(<App />, document.getElementById('root'));
