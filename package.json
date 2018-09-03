@@ -1,0 +1,36 @@
+{
+  "name": "alek.in",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html ",
+    "build": "parcel build ./src/index.html",
+    "clean": "rm -rf dist",
+    "clean:s3": "aws s3 rm s3://alek --recursive",
+    "publish:s3": "aws s3 cp dist/ s3://alek --recursive",
+    "publish": "npm run clean && npm run clean:s3 && npm run build && npm run publish:s3"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.1",
+    "babel-preset-react-app": "^3.1.0",
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "latest"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  }
+}
