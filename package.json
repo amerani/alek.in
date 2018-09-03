@@ -7,8 +7,9 @@
     "build": "parcel build ./src/index.html",
     "clean": "rm -rf dist",
     "clean:s3": "aws s3 rm s3://alek --recursive",
+    "patch": "npm version patch",
     "publish:s3": "aws s3 cp dist/ s3://alek --recursive",
-    "publish": "npm run clean && npm run clean:s3 && npm run build && npm run publish:s3"
+    "publish": "npm run patch && npm run clean && npm run clean:s3 && npm run build && npm run publish:s3"
   },
   "dependencies": {
     "react": "^16.2.0",
