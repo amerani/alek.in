@@ -2,11 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import pkg from "./package.alias.json";
+import { Photo } from "./Photo";
+import { Intro } from "./Intro";
+import { Bio } from "./Bio";
 
 const App = () => (
   <React.Fragment>
     <div className="App">
-      <p>Under Construction! Please check back later...</p>
+      <Photo />
+      <Intro /><br/>
+      <Bio />
     </div>
     <footer id="footer">v{pkg.version}</footer>
   </React.Fragment>

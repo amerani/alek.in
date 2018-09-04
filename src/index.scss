@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,500);
 
 $roboto: 'Roboto';
 
@@ -17,6 +17,10 @@ body {
   line-height: 1.7rem;
   padding: 3rem;
   margin: 0;
+}
+
+a:hover {
+  font-weight: 500 !important;
 }
 
 #footer {
