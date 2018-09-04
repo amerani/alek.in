@@ -19,7 +19,8 @@
     "autoprefixer": "^7.2.1",
     "babel-preset-react-app": "^3.1.0",
     "node-sass": "^4.9.3",
-    "parcel-bundler": "latest"
+    "parcel-bundler": "latest",
+    "simple-icons": "^1.8.7"
   },
   "postcss": {
     "modules": false,

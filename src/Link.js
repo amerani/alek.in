@@ -10,7 +10,7 @@ const Link = (props) => {
     return (
         <a 
             target="_blank"
-            style={styles}
+            style={{...styles, ...props.style}}
             href={href}
         >
             {children}

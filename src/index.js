@@ -5,13 +5,15 @@ import pkg from "./package.alias.json";
 import { Photo } from "./Photo";
 import { Intro } from "./Intro";
 import { Bio } from "./Bio";
+import { Contact } from "./Contact";
 
 const App = () => (
   <React.Fragment>
     <div className="App">
       <Photo />
       <Intro /><br/>
-      <Bio />
+      <Bio /><br/><br/><br/>
+      <Contact />
     </div>
     <footer id="footer">v{pkg.version}</footer>
   </React.Fragment>

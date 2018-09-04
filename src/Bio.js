@@ -41,13 +41,13 @@ const Bio = () => {
     return (
         <React.Fragment>
         <p style={styles.pb10}>I was born and raised in Mumbai, India</p>
-        <p>I studied Computer Science at the <Link color={ut.color} href={ut.href}>University of Texas at Austin</Link> 🤘</p><br/>
+        <p>I studied Computer Science at the <Link color={ut.color} href={ut.href}>University of Texas at Austin</Link></p><br/>
         
         <p style={styles.pb10}>I build distributed web applications at <Link color={uship.color} href={uship.href}>uShip</Link>
         </p>
         <p style={styles.pb10}>I make open-source tools for <Link color={gql.color} href={gql.href}>GraphQL</Link>
         </p>
-        <p>I enjoy looking at <Link color={insta.color} href={insta.href}>art</Link> and sometimes making it as well</p>
+        <p>I enjoy looking at <Link color={insta.color} href={insta.href}>multimedia art</Link> and sometimes making it as well</p>
         </React.Fragment>
     )
 }
