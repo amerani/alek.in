@@ -5,7 +5,8 @@ personal website hosted on s3
 `npm i` - install dependencies  
 `npm start` - start dev server using parcel-bundler  
 
-http://localhost:1234
+http://localhost:1234/index.html  
+http://localhost:1234/error.html  
 
 ## deployment
 `npm run build` - bundle app using parcel-bundler  

@@ -1,14 +1,7 @@
+@import "reset";
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,500);
 
 $roboto: 'Roboto';
-
-*,
-*::after
-,*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-} 
 
 body {
   font-size: 18px;
@@ -25,21 +18,4 @@ body {
     padding: 3rem;
     margin: 0;
   }
-}
-
-a:hover {
-  font-weight: 500 !important;
-}
-
-#footer {
-  padding: 1rem;
-  font-size: 0.7rem;
-}
-
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 2rem auto;
 }

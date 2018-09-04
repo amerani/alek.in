@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import pkg from "./package.alias.json";
 import { Photo } from "./components/Photo";
 import { Intro } from "./components/Intro";
 import { Bio } from "./components/Bio";
 import { Contact } from "./components/Contact";
+import pkg from "./package.alias.json";
+import './styles/index.scss';
 
 const App = () => (
   <React.Fragment>
