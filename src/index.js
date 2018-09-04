@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import pkg from "./package.alias.json";
-import { Photo } from "./Photo";
-import { Intro } from "./Intro";
-import { Bio } from "./Bio";
-import { Contact } from "./Contact";
+import { Photo } from "./components/Photo";
+import { Intro } from "./components/Intro";
+import { Bio } from "./components/Bio";
+import { Contact } from "./components/Contact";
 
 const App = () => (
   <React.Fragment>
@@ -13,9 +13,12 @@ const App = () => (
       <Photo />
       <Intro /><br/>
       <Bio /><br/><br/><br/>
-      <Contact />
+      <Contact /><br/><br/>
+      <footer id="footer">
+        <p>version {pkg.version}</p>
+        <p>{new Date().toUTCString()}</p>
+      </footer>
     </div>
-    <footer id="footer">v{pkg.version}</footer>
   </React.Fragment>
 );
 

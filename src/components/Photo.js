@@ -8,7 +8,7 @@ const styles = {
 };
 
 const Photo = () => {
-    const buffer = fs.readFileSync(`${__dirname}/../assets/me.jpg`);
+    const buffer = fs.readFileSync(`${__dirname}/../../assets/me.jpg`);
     return (
         <img 
             style={styles}
