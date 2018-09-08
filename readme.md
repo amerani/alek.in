@@ -1,4 +1,4 @@
-# [alek.in](https://alek.in)
+# [alek.in](http://alek.in)
 Static site with custom headers built using AWS S3, CloudFront, and Lambda@Edge
 
 ## development
@@ -13,5 +13,5 @@ http://localhost:1234/error.html
 `npm run publish` - copy bundle to AWS S3 bucket and update lambda code
 
 ## security scans
-:a: :heavy_plus_sign: [Mozilla Observatory](https://observatory.mozilla.org/analyze.html?host=alek.in)  
-:a: :heavy_plus_sign: [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=alek.in) 
+[Mozilla Observatory](https://observatory.mozilla.org/analyze.html?host=alek.in)  
+[SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=alek.in) 
