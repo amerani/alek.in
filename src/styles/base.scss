@@ -8,6 +8,10 @@ $roboto: 'Roboto';
   -moz-osx-font-smoothing: grayscale;
 }
 
+a:hover {
+  font-weight: 500 !important;
+}
+
 body {
   font-size: 18px;
   font-weight: 100;
