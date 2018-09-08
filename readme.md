@@ -12,4 +12,6 @@ http://localhost:1234/error.html
 `npm run build` - bundle app using parcel-bundler  
 `npm run publish` - copy bundle to AWS S3 bucket  
 
-http://alek.s3-website-us-east-1.amazonaws.com
+## security scans
+[Mozilla Observatory](https://observatory.mozilla.org/analyze.html?host=alek.in) :a: :heavy_plus_sign:  
+[SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=alek.in) :a: :heavy_plus_sign:  
