@@ -5,11 +5,14 @@
   "scripts": {
     "start": "parcel ./src/index.html ./src/error.html",
     "build": "parcel build ./src/index.html ./src/error.html --no-source-maps",
+    "zip": "zip -r lambda.zip src/lambda",
     "clean": "rm -rf dist",
     "clean:s3": "aws s3 rm s3://alek --recursive",
+    "clean:zip": "rm -f lambda.zip",
     "patch": "npm version patch",
     "publish:s3": "aws s3 cp dist/ s3://alek --recursive",
-    "publish": "npm run patch && npm run clean && npm run clean:s3 && npm run build && npm run publish:s3"
+    "publish:lambda": "aws lambda update-function-code --function-name alek-in-proxy --zip-file fileb://lambda.zip --publish",
+    "publish": "npm run patch && npm run clean && npm run clean:s3 && npm run build && npm run publish:s3 && npm run zip && npm run publish:lambda && npm run clean:zip"
   },
   "dependencies": {
     "react": "^16.2.0",
