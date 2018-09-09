@@ -1,8 +1,8 @@
 const AWS = require('./aws');
 const path = require("path");
 const fs = require("fs-jetpack");
-const chalk = require("chalk");
 const JSZip = require("jszip");
+const log = require("./log");
 
 const Lambda = new AWS.Lambda();
 const FunctionName = process.env.AWS_LAMBDA_FUNCTION;
@@ -13,7 +13,9 @@ async function publish() {
         Publish: true,
         ZipFile: await getZip()
     }).promise();
-    console.log(chalk.green(`Successfully updated Lambda code ${FunctionArn}`));
+
+    log.success(`Updated Lambda code ${FunctionArn}`);
+
     return FunctionArn;
 }
 

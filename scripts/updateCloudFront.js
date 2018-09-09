@@ -1,5 +1,5 @@
 const AWS = require("./aws");
-const chalk = require("chalk");
+const log = require("./log");
 
 const CloudFront = new AWS.CloudFront();
 const Id = process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID;
@@ -9,7 +9,7 @@ async function update(lambdaArn) {
     DistributionConfig.DefaultCacheBehavior.LambdaFunctionAssociations.Items[0].LambdaFunctionARN = lambdaArn;
     const res = await CloudFront.updateDistribution({ Id, DistributionConfig, IfMatch: ETag }).promise();
 
-    console.log(chalk.green(`Successfully updated CloudFront Distribution`));
+    log.success(`Updated CloudFront Lambda Association`);
 }
 
 module.exports = update;
