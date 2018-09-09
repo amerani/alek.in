@@ -4,8 +4,9 @@ const log = require("./log");
 const CloudFront = new AWS.CloudFront();
 const Id = process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID;
 
-async function invalidate(lambdaArn) {
-    const res = await CloudFront.createInvalidation({
+async function invalidate() {
+    await CloudFront.waitFor("distributionDeployed", { Id }).promise();
+    await CloudFront.createInvalidation({
         DistributionId: Id,
         InvalidationBatch: {
             CallerReference: new Date().toISOString(),
@@ -15,7 +16,6 @@ async function invalidate(lambdaArn) {
             }
         }
     }).promise();
-    
     log.success(`Invalidated CloudFront Distribution`);
 }
 
