@@ -5,3 +5,7 @@ node_modules
 .DS_Store
 secrets.*
 .env
+*.terraform
+*.zip
+*.backup
+*.tfstate
