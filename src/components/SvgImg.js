@@ -3,8 +3,7 @@ import React from 'react';
 const SvgImg = (props) => {
     const { svg } = props;
     const styles = {
-        height: "30px",
-        fill: "blue"
+        height: "28px",
     }
     return (
         <img 

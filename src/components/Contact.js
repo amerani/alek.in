@@ -6,6 +6,7 @@ import gmail from 'simple-icons/icons/gmail';
 import insta from 'simple-icons/icons/instagram';
 import twitter from 'simple-icons/icons/twitter';
 import spotify from 'simple-icons/icons/spotify';
+import medium from 'simple-icons/icons/medium';
 import { Link } from "./Link";
 import { SvgImg } from "./SvgImg";
 
@@ -36,6 +37,11 @@ const Contact = () => {
             {/* GMAIL */}
             <Link style={styles.item} href="mailto:alekmerani@gmail.com">
                 <SvgImg svg={gmail.svg} />
+            </Link>
+
+            {/* MEDIUM */}
+            <Link style={styles.item} href="https://medium.com/@alek.merani">
+                <SvgImg svg={medium.svg} />
             </Link>
 
             {/* NPM */}
