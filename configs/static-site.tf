@@ -5,6 +5,11 @@ provider "aws" {
 variable "bucket_name" { }
 variable "function_name" { }
 variable "s3_origin_id" { }
+variable "function_zip" { }
+
+resource "template_file" "fn_src" {
+  template = "${file("${var.function_zip}")}"
+}
 
 resource "aws_s3_bucket" "bucket" {
     bucket = "${var.bucket_name}"
@@ -85,8 +90,8 @@ resource "aws_lambda_function" "fn" {
     runtime = "nodejs8.10"
     handler = "index.handler"
     role = "${aws_iam_role.lambda_role.arn}"
-    source_code_hash = "${base64sha256(file("function.zip"))}"
-    filename = "function.zip"
+    source_code_hash = "${base64sha256(template_file.fn_src.rendered)}"
+    filename = "${var.function_zip}"
     publish = true
 }
 
