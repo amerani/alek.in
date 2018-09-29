@@ -32,7 +32,7 @@ const links = {
     },
     insta: {
         color: "#8a3ab9",
-        href: "https://www.instagram.com/p/BdRU4HsDrXS/?taken-by=alekmarg"
+        href: "https://www.instagram.com/p/BdRU4HsDrXS"
     }
 }
 
