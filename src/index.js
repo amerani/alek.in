@@ -16,7 +16,6 @@ const App = () => (
       <Contact /><br/><br/>
       <footer id="footer">
         <p>version {pkg.version}</p>
-        <p>{new Date().toUTCString()}</p>
       </footer>
     </div>
   </React.Fragment>

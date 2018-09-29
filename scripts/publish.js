@@ -6,8 +6,8 @@ const invalidate = require("./invalidateDist");
 
 (async function() {
     await s3();
-    const arn = await lambda();
-    await cloudFront(arn);
+    // const arn = await lambda();
+    // await cloudFront(arn);
     await invalidate();
 
 })()

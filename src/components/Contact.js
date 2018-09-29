@@ -55,7 +55,7 @@ const Contact = () => {
             </Link>
 
             {/* INSTAGRAM */}          
-            <Link style={styles.item} href="https://www.instagram.com/alekmarg/">
+            <Link style={styles.item} href="https://www.instagram.com/instantalek/">
                 <SvgImg svg={insta.svg} />
             </Link>        
 
