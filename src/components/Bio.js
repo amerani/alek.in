@@ -26,6 +26,10 @@ const links = {
         color: "#02aaf3",
         href: "https://uship.com"
     },
+    qualtrics: {
+        color: '#464E7E',
+        href: 'https://www.qualtrics.com/'
+    },
     gql: {
         color: "#e10098",
         href: "https://github.com/amerani/gsox"
@@ -37,15 +41,15 @@ const links = {
 }
 
 const Bio = () => {
-    const { ut, uship, gql, insta } = links;
+    const { ut, uship, gql, insta, qualtrics } = links;
     return (
         <React.Fragment>
         <p style={styles.pb10}>I was born and raised in Mumbai, India</p>
         <p>I studied Computer Science at the <Link color={ut.color} href={ut.href}>University of Texas at Austin</Link></p><br/>
         
-        <p style={styles.pb10}>I build distributed web applications at <Link color={uship.color} href={uship.href}>uShip</Link>
+        <p style={styles.pb10}>I'm a full stack software engineer at <Link color={qualtrics.color} href={qualtrics.href}>Qualtrics</Link>
         </p>
-        <p style={styles.pb10}>I make open-source tools for <Link color={gql.color} href={gql.href}>GraphQL</Link>
+        <p style={styles.pb10}>I build open-source tools for <Link color={gql.color} href={gql.href}>GraphQL</Link>
         </p>
         <p>I enjoy looking at <Link color={insta.color} href={insta.href}>multimedia art</Link> and sometimes making it as well</p>
         </React.Fragment>
