@@ -22,37 +22,40 @@ const links = {
         color: "#bf5700",
         href: "https://utexas.edu"
     },
-    uship: {
-        color: "#02aaf3",
-        href: "https://uship.com"
-    },
     qualtrics: {
-        color: '#464E7E',
+        color: '#21dbaa',
         href: 'https://www.qualtrics.com/'
     },
-    gql: {
-        color: "#e10098",
+    fe: {
+        color: "#61dafb",
         href: "https://github.com/amerani/gsox"
     },
     insta: {
         color: "#8a3ab9",
-        href: "https://www.instagram.com/p/BdRU4HsDrXS"
+        href: "https://www.instagram.com/e9c12/"
+    },
+    dev: {
+        color: "#e10098",
+        href: "https://github.com/amerani/better-commit"
+    },
+    niko: {
+        color: "#e3c0a0",
+        href: "https://www.instagram.com/nikotheaussiepoo/"
     }
 }
 
 const Bio = () => {
-    const { ut, uship, gql, insta, qualtrics } = links;
+    const { ut, fe, dev, insta, qualtrics, niko } = links;
     return (
-        <React.Fragment>
-        <p style={styles.pb10}>I was born and raised in Mumbai, India</p>
-        <p>I studied Computer Science at the <Link color={ut.color} href={ut.href}>University of Texas at Austin</Link></p><br/>
-        
-        <p style={styles.pb10}>I'm a full stack software engineer at <Link color={qualtrics.color} href={qualtrics.href}>Qualtrics</Link>
-        </p>
-        <p style={styles.pb10}>I build open-source tools for <Link color={gql.color} href={gql.href}>GraphQL</Link>
-        </p>
-        <p>I enjoy looking at <Link color={insta.color} href={insta.href}>multimedia art</Link> and sometimes making it as well</p>
-        </React.Fragment>
+        <section style={styles.pb10}>
+            <p>I was born and raised in Mumbai, India</p>
+            <p>I studied Computer Science at the <Link color={ut.color} href={ut.href}>University of Texas at Austin</Link></p><br/>
+            
+            <p>I'm a lead engineer at <Link color={qualtrics.color} href={qualtrics.href}>Qualtrics</Link>, working on the reporting platform and sometimes I build open-source tools for <Link color={fe.color} href={dev.href}>web development</Link> and <Link color={dev.color} href={dev.href}>developer productivity</Link>
+            </p><br/>
+
+            <p>I also enjoy making <Link color={insta.color} href={insta.href}>audiovisual art</Link> and have a fur baby named <Link color={niko.color} href={niko.href}>Niko 🐶</Link></p>
+        </section>
     )
 }
 
