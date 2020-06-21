@@ -1,6 +1,6 @@
 {
   "name": "alek.in",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "license": "MIT",
   "scripts": {
     "start": "parcel ./src/index.html ./src/error.html",
