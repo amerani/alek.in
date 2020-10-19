@@ -20,7 +20,7 @@ const styles = {
 const links = {
     ut: {
         color: "#bf5700",
-        href: "https://utexas.edu"
+        href: "https://utexas.edu/"
     },
     qualtrics: {
         color: '#21dbaa',
@@ -28,15 +28,15 @@ const links = {
     },
     fe: {
         color: "#61dafb",
-        href: "https://github.com/amerani/gsox"
+        href: "https://github.com/amerani/gsox/"
     },
     insta: {
         color: "#8a3ab9",
-        href: "https://www.instagram.com/e9c12/"
+        href: "https://www.instagram.com/e.phem.er.al_/"
     },
     dev: {
         color: "#e10098",
-        href: "https://github.com/amerani/better-commit"
+        href: "https://github.com/amerani/better-commit/"
     },
     niko: {
         color: "#e3c0a0",
@@ -51,10 +51,10 @@ const Bio = () => {
             <p>I was born and raised in Mumbai, India</p>
             <p>I studied Computer Science at the <Link color={ut.color} href={ut.href}>University of Texas at Austin</Link></p><br/>
             
-            <p>I'm a lead engineer at <Link color={qualtrics.color} href={qualtrics.href}>Qualtrics</Link>, working on the reporting platform and sometimes I build open-source tools for <Link color={fe.color} href={dev.href}>web development</Link> and <Link color={dev.color} href={dev.href}>developer productivity</Link>
+            <p>I'm a lead engineer at <Link color={qualtrics.color} href={qualtrics.href}>Qualtrics</Link>, working on the reporting platform and sometimes I build open-source tools for <Link color={fe.color} href={fe.href}>web development</Link> and <Link color={dev.color} href={dev.href}>developer productivity</Link>
             </p><br/>
 
-            <p>I also enjoy making <Link color={insta.color} href={insta.href}>audiovisual art</Link> and have a fur baby named <Link color={niko.color} href={niko.href}>Niko 🐶</Link></p>
+            <p>I also enjoy making <Link color={insta.color} href={insta.href}>audiovisual art</Link> and have a fur child named <Link color={niko.color} href={niko.href}>Niko 🐶</Link></p>
         </section>
     )
 }
