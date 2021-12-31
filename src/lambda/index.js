@@ -5,7 +5,7 @@ exports.handler = (event, context, callback) => {
     
     headers['strict-transport-security'] = [{
         key:   'Strict-Transport-Security', 
-        value: "max-age=31536000; includeSubdomains; preload"
+        value: "max-age=300; includeSubdomains;"
     }];
 
     headers['content-security-policy'] = [{

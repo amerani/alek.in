@@ -87,7 +87,7 @@ EOF
 
 resource "aws_lambda_function" "fn" {
     function_name = "${var.function_name}"
-    runtime = "nodejs8.10"
+    runtime = "nodejs14.x"
     handler = "index.handler"
     role = "${aws_iam_role.lambda_role.arn}"
     source_code_hash = "${base64sha256(template_file.fn_src.rendered)}"
